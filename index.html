@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольная работа: Выбор варианта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-blue: #eef5f9;
+            --text-dark: #333;
+            --accent-teal: #4b6569;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Montserrat', sans-serif; 
+            color: var(--text-dark); 
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 2.5rem; 
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+
+        p.subtitle {
+            color: #888;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .variant-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .variant-card {
+            background: var(--bg-blue);
+            padding: 40px 20px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .variant-card:hover {
+            transform: translateY(-10px);
+            background: #fff;
+            border-color: var(--accent-teal);
+            box-shadow: 0 10px 30px rgba(75, 101, 105, 0.1);
+        }
+
+        .variant-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-teal);
+            margin-bottom: 15px;
+        }
+
+        .variant-label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #ccc;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .variant-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Теория вероятностей</h1>
+    <p class="subtitle">Выберите свой вариант</p>
+
+    <div class="variant-container">
+        <a href="variant1.html" class="variant-card">
+            <div class="variant-number">I</div>
+            <div class="variant-label">Вариант 1</div>
+        </a>
+
+        <a href="variant2.html" class="variant-card">
+            <div class="variant-number">II</div>
+            <div class="variant-label">Вариант 2</div>
+        </a>
+
+        <a href="variant3.html" class="variant-card">
+            <div class="variant-number">III</div>
+            <div class="variant-label">Вариант 3</div>
+        </a>
+    </div>
+
+    <footer>timon❤️</footer>
+
+</body>
+</html>
